@@ -1,0 +1,376 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+ 
+#wrapper{
+max-width: 1920px;
+margin: 0 auto;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+.menubar ul {
+    list-style-type: none;
+    /* margin: 0; */
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+  }
+  
+  .menubar li {
+    float: left;
+    list-style-type: none;
+  }
+  
+  .menubar li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 25px;
+    text-decoration: none;
+    transition: all .2s ease-in-out; 
+  }
+  
+  /* Change the link color to #111 (black) on hover */
+  .menubar li a:hover {
+    transform: scale(1.3); 
+  }
+
+body{
+    font-family: 'Monaco', Courier, monospace;
+}
+
+.avatar {
+    width: 250px;
+    height: 250px;
+    box-sizing: border-box;
+    border: 1px white solid;
+    border-radius: 50%;
+    overflow: hidden;
+    box-shadow: 0 5px 15px 0px rgba(0,0,0,0.6);
+    transform: translatey(0px);
+    animation: float 6s ease-in-out infinite;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .avatar img { width: 100%; height: auto; }
+  
+
+.context {
+    width: 100%;
+    position: absolute;
+    top:20vh;
+    
+}
+
+.context h1{
+    text-align: center;
+    color: #fff;
+    font-size: 70px;
+}
+
+.context h3{
+    text-align: center;
+    color: white;
+    font-size: 25px;
+}
+
+.area{
+    background: #4e54c8;  
+    background: -webkit-linear-gradient(to left, #8f94fb, #4e54c8);  
+    width: 100%;
+    height:100vh;
+    
+   
+}
+
+.circles{
+    position:relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.circles li{
+    position: absolute;
+    display: block;
+    list-style: none;
+    width: 20px;
+    height: 20px;
+    background: rgba(255, 255, 255, 0.2);
+    animation: animate 25s linear infinite;
+    bottom: -150px;
+    
+}
+
+.circles li:nth-child(1){
+    left: 25%;
+    width: 80px;
+    height: 80px;
+    animation-delay: 0s;
+}
+
+
+.circles li:nth-child(2){
+    left: 10%;
+    width: 20px;
+    height: 20px;
+    animation-delay: 2s;
+    animation-duration: 12s;
+}
+
+.circles li:nth-child(3){
+    left: 70%;
+    width: 20px;
+    height: 20px;
+    animation-delay: 4s;
+}
+
+.circles li:nth-child(4){
+    left: 40%;
+    width: 60px;
+    height: 60px;
+    animation-delay: 0s;
+    animation-duration: 18s;
+}
+
+.circles li:nth-child(5){
+    left: 65%;
+    width: 20px;
+    height: 20px;
+    animation-delay: 0s;
+}
+
+.circles li:nth-child(6){
+    left: 75%;
+    width: 110px;
+    height: 110px;
+    animation-delay: 3s;
+}
+
+.circles li:nth-child(7){
+    left: 35%;
+    width: 150px;
+    height: 150px;
+    animation-delay: 7s;
+}
+
+.circles li:nth-child(8){
+    left: 50%;
+    width: 25px;
+    height: 25px;
+    animation-delay: 15s;
+    animation-duration: 45s;
+}
+
+.circles li:nth-child(9){
+    left: 20%;
+    width: 15px;
+    height: 15px;
+    animation-delay: 2s;
+    animation-duration: 35s;
+}
+
+.circles li:nth-child(10){
+    left: 85%;
+    width: 150px;
+    height: 150px;
+    animation-delay: 0s;
+    animation-duration: 11s;
+}
+
+section {
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  #sec-2, #sec-4, #sec-6, #sec-8 {
+    background-color: rgb(153, 153, 236);
+  }
+
+  #sec-3, #sec-5, #sec-7 {
+    background-color: #4e54c8;
+  }
+
+  .container h1, .education h1, .projects h1, .workExp h1, .skills h1, .publications h1,.contact h1{
+    text-align: center;
+    color: black;
+    font-size: 70px;
+}
+
+  .container p{
+    text-align: center;
+    color: #fff;
+    font-size: 20px;
+    padding-left: 20%;
+    padding-right: 25%;
+    padding-top: 20px;
+    text-align: justify;
+}
+
+.container img, .education img{
+    /* flex-basis: 20%; */
+    height: 300px;
+    width: 300px;
+    padding-right: 50px;
+    padding-bottom: 100px;
+    padding-top: 20px;
+}
+
+.education p{
+    text-align: center;
+    color: #fff;
+    font-size: 20px;
+    text-align: justify;
+    padding-top: 20px;
+}
+
+.projects li, .workExp li{
+    text-align: center;
+    color: #fff;
+    font-size: 15px;
+    text-align: justify;
+}
+
+.projects ul, .workExp ul{
+    padding-left: 80px;
+    padding-right: 60px;
+}
+
+.projects h3, .workExp h3 {
+    color: white;
+    /* padding-top: 20px; */
+    padding-left: 30px;
+}
+
+.projects h5, .workExp h5, .skills h5 {
+    color: white/*rgb(65, 61, 61)*/;
+    font-size: 18px;
+    padding-left: 30px;
+}
+
+.skills td{
+    padding: 15px;
+    text-align: center;
+    color:white;
+    border-bottom: 1px solid #ddd;
+    }
+
+.skills img{
+    width:30px;
+    height:30px;
+    align-items: center;
+}
+
+.publications p{
+        text-align: center;
+        color: #fff;
+        font-size: 20px;
+        text-align: justify;
+        padding-top: 20px;
+}
+
+.publications a{
+  background-color: transparent;
+  color: white;
+  border: 1px solid white;
+  padding: 14px 25px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  box-shadow: 0 6px 6px rgba(0, 0, 0, 0.6);
+  border-radius: 12px;
+  padding-top: 10px;
+}
+
+.contact p{
+    text-align: center;
+    color: #fff;
+    font-size: 20px;
+    text-align: justify;
+    padding-top: 20px;
+}
+
+.contact td{
+    padding: 15px;
+    text-align: center;
+    color:white;
+    border-bottom: 1px solid #ddd;
+}
+
+.contact a{
+    /* text-decoration: none; */
+    color: white;
+  
+}
+
+  .scroll-down {
+    height: 50px;
+    width: 30px;
+    border: 2px solid black;
+    position: absolute;
+    left: 50%;
+    bottom: 20px;
+    border-radius: 50px;
+    cursor: pointer;
+  }
+  .scroll-down::before,
+  .scroll-down::after {
+    content: "";
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    height: 10px;
+    width: 10px;
+    transform: translate(-50%, -100%) rotate(45deg);
+    border: 2px solid black;
+    border-top: transparent;
+    border-left: transparent;
+    animation: scroll-down 1s ease-in-out infinite;
+  }
+  .scroll-down::before {
+    top: 30%;
+    animation-delay: 0.3s;
+    /* animation: scroll-down 1s ease-in-out infinite; */
+  }
+  
+  @keyframes scroll-down {
+    0% {
+      /* top:20%; */
+      opacity: 0;
+    }
+    30% {
+      opacity: 1;
+    }
+    60% {
+      opacity: 1;
+    }
+    100% {
+      top: 90%;
+      opacity: 0;
+    }
+  }  
+
+@keyframes animate {
+
+    0%{
+        transform: translateY(0) rotate(0deg);
+        opacity: 1;
+        border-radius: 0;
+    }
+
+    100%{
+        transform: translateY(-1000px) rotate(720deg);
+        opacity: 0;
+        border-radius: 50%;
+    }
+
+}
